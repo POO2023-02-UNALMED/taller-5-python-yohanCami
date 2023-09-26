@@ -6,9 +6,9 @@ class Ave(Animal):
     halcones = 0
     aguilas = 0
 
-    def __init__(self, nombre = "", edad = 0, habitat = "", genero = "", zona = None, colorPlumas = ""):
+    def __init__(self, nombre = "", edad = 0, habitat = "", genero = "", colorPlumas = ""):
 
-        super().__init__(nombre, edad, habitat, genero, zona)
+        super().__init__(nombre, edad, habitat, genero)
         self._colorPlumas = colorPlumas
 
         self._listado.append(self)
