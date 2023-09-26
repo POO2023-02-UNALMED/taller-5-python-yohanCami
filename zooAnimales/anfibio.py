@@ -23,14 +23,14 @@ class Anfibio(Animal):
     def movimiento():
         return "saltar"
     
-    @staticmethod
+    @classmethod
 
     def crearRana(cls, nombre, edad, genero):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", False)
         cls.ranas += 1
         return rana
     
-    @staticmethod
+    @classmethod
     
     def crearSalamandra(cls, nombre, edad, genero):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)

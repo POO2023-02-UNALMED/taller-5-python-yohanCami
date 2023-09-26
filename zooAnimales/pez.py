@@ -16,7 +16,7 @@ class Pez(Animal):
         self._listado.append(self)
 
     
-    @staticmethod
+    @classmethod
 
     def cantidadPeces(cls):
         return len(cls._listado)
@@ -24,15 +24,14 @@ class Pez(Animal):
     def movimiento():
         return "nadar"
     
-    @staticmethod
+    @classmethod
 
     def crearSalmon(cls, nombre, edad, genero):
         salmon = Pez(nombre, edad, "oceano", genero, "rojo", 6)
         cls.salmones += 1
         return salmon
     
-    @staticmethod
-
+    @classmethod
     def crearBacalao(cls, nombre, edad, genero):
         bacalao = Pez(nombre, edad, "oceano", genero, "gris", 6)
         cls.bacalaos += 1
