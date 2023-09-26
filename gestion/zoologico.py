@@ -19,7 +19,7 @@ class Zoologico:
         contador = 0
         for i in range(len(self._zonas)):
 
-            zona = self.zonas[i]
+            zona = self._zonas[i]
             contador += zona.cantidadAnimales()
         
         return contador
