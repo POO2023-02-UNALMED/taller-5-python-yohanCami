@@ -16,7 +16,7 @@ class Animal:
     
     @staticmethod
 
-    def totalPorTipo(cls):
+    def totalPorTipo():
 
         from zooAnimales.mamifero import Mamifero 
         from zooAnimales.ave import Ave
@@ -38,6 +38,17 @@ class Animal:
         
         else:
             return "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + ", habito en " + self._habitat + " y mi genero es " + self._genero
+
+    def toString(self):
+
+        if (self._zona != None):
+
+            return "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + " habito en " + self._habitat + "y mi genero es " + self._genero + ", la zona en la que me ubico es" + self._zona.getNombre() + ", en el zoo" + self._zona.getZoo()
+        
+        else:
+            return "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + ", habito en " + self._habitat + " y mi genero es " + self._genero
+
+
 
     def getNombre(self):
         return self._nombre
